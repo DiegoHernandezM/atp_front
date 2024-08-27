@@ -1,0 +1,40 @@
+{
+  "name": "AIS",
+  "short_name": "AIS",
+  "description": "App de control escolar",
+  "start_url": "/",
+  "dir": "ltr",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "orientation": "portrait",
+  "lang": "es-MX",
+  "scope": "/",
+  "prefer_related_applications" : false,
+  "icons": [
+    {
+      "src": "logo-ais.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "logo-ais256x256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "logo-ais192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "logo-ais96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+.container {
+    position: relative;
+    margin-top: 10%;
+    width: 500px;
+    height: 550px;
+    overflow: hidden;
+}
+
+@keyframes flyAcross {
+    from {
+        right: -20%;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+.message  {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    clip-path: inset(0 0 0 100%); /* Inicia con todo el contenido oculto */
+    z-index: 0;
+}
+
+.captain-container {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: opacity 2s ease-in-out;
+    clip-path: inset(0 0 0 88%);
+    opacity: 0.5;
+}
+
+.message.visible {
+    opacity: 1;
+    clip-path: inset(0 0 0 0); /* Revela gradualmente el contenido */
+    transition: clip-path 0s ease-in-out, opacity 3s ease-in-out;
+}
+
+.captain-container.visible {
+    clip-path: inset(0 0 0 0); /* Revela gradualmente el contenido */
+    transition: clip-path 2s ease-in-out, opacity 5s ease-in-out;
+    opacity: 0.5;
+}
