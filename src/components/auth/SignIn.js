@@ -10,6 +10,7 @@ import {
   Alert as MuiAlert,
   Button,
   TextField as MuiTextField,
+  Typography
 } from "@mui/material";
 import { spacing } from "@mui/system";
 
@@ -34,8 +35,8 @@ export default function SignIn({ token }) {
   return (
     <Formik
       initialValues={{
-        email: "",
-        password: "",
+        email: "admin@admin.com",
+        password: "secret",
         submit: false,
       }}
       validationSchema={Yup.object().shape({
@@ -74,6 +75,17 @@ export default function SignIn({ token }) {
               {errors.submit}
             </Alert>
           )}
+          <Alert variant="outlined" severity="success">
+            <Typography variant="subtitle1" gutterBottom>
+             Para ingresar como estudiante:
+            </Typography>
+            <Typography variant="subtitle1" gutterBottom>
+              correo: student@demo.com
+            </Typography>
+            <Typography variant="subtitle1" gutterBottom>
+              contraseña: secret
+            </Typography>
+          </Alert>
           <TextField
             type="email"
             name="email"
