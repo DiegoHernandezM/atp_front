@@ -81,6 +81,7 @@ export default function SignUp({ handleCallBack, handleChangeEmail }) {
             type="email"
             name="email"
             label="Correo"
+            disabled
             value={values.email}
             error={Boolean(touched.email && errors.email)}
             fullWidth
@@ -95,6 +96,7 @@ export default function SignUp({ handleCallBack, handleChangeEmail }) {
           <TextField
             type="text"
             name="name"
+            disabled
             label="Nombre Completo"
             value={values.name}
             error={Boolean(touched.name && errors.name)}

@@ -39,7 +39,7 @@ function AdminPanel() {
 
   useEffect(() => {
     dispatch(getContent());
-    formik.setFieldValue("title", content?.title);
+    formik.setFieldValue("title", "Diego Herández");
     formik.setFieldValue("subtitle", content?.subtitle);
     formik.setFieldValue("principal_text", content?.principal_text);
     formik.setFieldValue("compatible_text", content?.compatible_text);
