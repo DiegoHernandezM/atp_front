@@ -83,7 +83,7 @@ export default function SignIn({ token }) {
               correo: student@demo.com
             </Typography>
             <Typography variant="subtitle1" gutterBottom>
-              contraseña: secret
+              contraseña: 123456
             </Typography>
           </Alert>
           <TextField
