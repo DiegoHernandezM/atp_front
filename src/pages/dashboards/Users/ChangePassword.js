@@ -102,6 +102,7 @@ export default function ChangePassword({ open, close, changePassword }) {
             fullWidth
             value={form.oldPassword}
             onChange={handleChange}
+            disabled
           />
           <TextField
             name="newPassword"
@@ -114,6 +115,7 @@ export default function ChangePassword({ open, close, changePassword }) {
             onChange={handleChange}
             error={errors}
             helperText={message}
+            disabled
           />
           <TextField
             name="newPasswordConfirmation"
@@ -126,6 +128,7 @@ export default function ChangePassword({ open, close, changePassword }) {
             onChange={handleChange}
             error={errors}
             helperText={message}
+            disabled
           />
         </Box>
         <Box>

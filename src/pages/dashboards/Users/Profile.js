@@ -140,6 +140,7 @@ function Public() {
                   value={formik.values.name ?? ""}
                   onChange={formik.handleChange}
                   fullWidth
+                  disabled
                   my={2}
                 />
               </FormControl>
@@ -158,6 +159,7 @@ function Public() {
                   value={formik.values.email ?? ""}
                   onChange={formik.handleChange}
                   fullWidth
+                  disabled
                   my={2}
                 />
               </FormControl>

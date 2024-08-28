@@ -78,6 +78,7 @@ function ResetPassword() {
             onBlur={handleBlur}
             onChange={handleChange}
             my={3}
+            disabled
           />
           <Button
             type="submit"
