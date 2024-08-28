@@ -147,6 +147,7 @@ function AdminPanel() {
                         helperText={formik.touched.title && formik.errors.title}
                         onChange={formik.handleChange}
                         fullWidth
+                        disabled
                         my={2}
                       />
                     </FormControl>
@@ -158,6 +159,7 @@ function AdminPanel() {
                         name="subtitle"
                         label="Subtitulo"
                         variant="outlined"
+                        disabled
                         value={formik.values.subtitle || ""}
                         onChange={formik.handleChange}
                         error={formik.touched.subtitle && Boolean(formik.errors.subtitle)}
@@ -183,6 +185,7 @@ function AdminPanel() {
                         error={formik.touched.principal_text && Boolean(formik.errors.principal_text)}
                         helperText={formik.touched.principal_text && formik.errors.principal_text}
                         fullWidth
+                        disabled
                         my={2}
                       />
                     </FormControl>
@@ -199,6 +202,7 @@ function AdminPanel() {
                         error={formik.touched.compatible_text && Boolean(formik.errors.compatible_text)}
                         helperText={formik.touched.compatible_text && formik.errors.compatible_text}
                         fullWidth
+                        disabled
                         my={2}
                       />
                     </FormControl>
@@ -220,6 +224,7 @@ function AdminPanel() {
                         error={formik.touched.footer_title && Boolean(formik.errors.footer_title)}
                         helperText={formik.touched.footer_title && formik.errors.footer_title}
                         fullWidth
+                        disabled
                         my={2}
                       />
                     </FormControl>
@@ -236,6 +241,7 @@ function AdminPanel() {
                         error={formik.touched.footer_text_1 && Boolean(formik.errors.footer_text_1)}
                         helperText={formik.touched.footer_text_1 && formik.errors.footer_text_1}
                         fullWidth
+                        disabled
                         my={2}
                       />
                     </FormControl>
@@ -254,6 +260,7 @@ function AdminPanel() {
                         error={formik.touched.footer_text_2 && Boolean(formik.errors.footer_text_2)}
                         helperText={formik.touched.footer_text_2 && formik.errors.footer_text_2}
                         fullWidth
+                        disabled
                         my={2}
                       />
                     </FormControl>
@@ -270,6 +277,7 @@ function AdminPanel() {
                         error={formik.touched.footer_text_3 && Boolean(formik.errors.footer_text_3)}
                         helperText={formik.touched.footer_text_3 && formik.errors.footer_text_3}
                         fullWidth
+                        disabled
                         my={2}
                       />
                     </FormControl>
@@ -288,6 +296,7 @@ function AdminPanel() {
                         error={formik.touched.footer_text_4 && Boolean(formik.errors.footer_text_4)}
                         helperText={formik.touched.footer_text_4 && formik.errors.footer_text_4}
                         fullWidth
+                        disabled
                         my={2}
                       />
                     </FormControl>
@@ -309,6 +318,7 @@ function AdminPanel() {
                         error={formik.touched.link_video && Boolean(formik.errors.link_video)}
                         helperText={formik.touched.link_video && formik.errors.link_video}
                         fullWidth
+                        disabled
                         my={2}
                       />
                     </FormControl>
@@ -325,6 +335,7 @@ function AdminPanel() {
                         error={formik.touched.subscribe_button && Boolean(formik.errors.subscribe_button)}
                         helperText={formik.touched.subscribe_button && formik.errors.subscribe_button}
                         fullWidth
+                        disabled
                         my={2}
                       />
                     </FormControl>
@@ -343,6 +354,7 @@ function AdminPanel() {
                         error={formik.touched.login_link_text && Boolean(formik.errors.login_link_text)}
                         helperText={formik.touched.login_link_text && formik.errors.login_link_text}
                         fullWidth
+                        disabled
                         my={2}
                       />
                     </FormControl>
@@ -361,6 +373,7 @@ function AdminPanel() {
                         error={formik.touched.ws_number && Boolean(formik.errors.ws_number)}
                         helperText={formik.touched.ws_number && formik.errors.ws_number}
                         fullWidth
+                        disabled
                         my={2}
                       />
                     </FormControl>
